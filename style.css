@@ -1,0 +1,99 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  background: #333;
+  justify-content: center;
+}
+.section1 {
+  text-align: center;
+  color: white;
+  min-height: 450px;
+  scroll-behavior: smooth;
+}
+.section1 .image1 {
+  position: absolute;
+  background: #333 url("./images/football.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.4;
+}
+.text {
+  position: absolute;
+  margin-top: 100px;
+  padding: 30px;
+}
+.text a {
+  border: 0.5px solid #fff;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+}
+.text a:hover {
+  background-color: white;
+  color: black;
+}
+.section2 {
+  flex-direction: column;
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 30px;
+  max-height: fit-content;
+}
+.section2 p {
+  padding-right: 30px;
+  padding-left: 30px;
+  column-count: 2;
+  column-fill: balance;
+}
+.section3 {
+  margin: 20px;
+  display: flex;
+  color: white;
+  column-count: 3;
+  scroll-behavior: smooth;
+}
+.section3 div {
+  flex-basis: 33%;
+  margin: 15px;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.section3 img {
+  width: 100%;
+  height: 200px;
+}
+@media screen and (min-width: 1400px) {
+  .section3 {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+.section5 {
+  display: flex;
+  margin: 0;
+}
+.section5 :nth-child(n) {
+  flex-basis: 50%;
+  text-align: center;
+  padding: 20px;
+}
+.section5 .contact {
+  background-color: skyblue;
+  color: white;
+}
+
+.section3 :nth-child(n):hover,
+.section2:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
